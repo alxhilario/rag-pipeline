@@ -28,7 +28,11 @@ export const retrieveAndGenerate = async (query) => {
 // Invoke function if this file was run directly.
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
     const query = process.argv[2];
+    if (query === undefined || query === null) {
+        console.log('error: query parameter is required.');
+        process.exit(1);
+    }
     const response = await retrieveAndGenerate(process.argv[2]);
-    console.log(response['output']['text'])
+    console.log(response['output']['text']);
 }
 
