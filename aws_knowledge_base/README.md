@@ -1,5 +1,7 @@
 # RAG With AWS Bedrock Knowledge Base
 
+> ⚠ Make sure your [AWS credential](https://docs.aws.amazon.com/cli/v1/userguide/cli-configure-files.html) is properly set.
+
 ## Query using Python
 Install `boto3` package:
 ```
@@ -14,7 +16,7 @@ $ python kb_retrieve_and_generate.py -q "what is the GPS coordinates provided by
 41.026944, -82.088056
 ```
 
-Make sure your aws credential file is properly set.
+
 
 The following are the environment variables used in the script:
 * AWS_PROFILE
