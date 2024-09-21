@@ -1,0 +1,9 @@
+langchain-ollama
+pandas
+psycopg[binary]
+pgvector
+python-dotenv
+tiktoken
+langchain
+langchain-postgres
+langchain-community
